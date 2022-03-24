@@ -1,0 +1,48 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int a,flag=0;
+    cin>>a;
+    int b=sqrt(a);
+    if(b*b==a)
+    {
+        cout<<"True";
+
+    }
+    else
+    {
+        cout<<"False";
+    }
+}
+
+
+
+
+sample Test Case:
+
+input:
+
+36
+
+output:
+
+True
+
+Explanation:
+
+36 = 6*6 so it is perfect square
+
+input:
+
+26
+
+output:
+
+False
+
+Explanation:
+
+26 square root is 5.09 it not a whole number
+
