@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int  main()
+{
+    int n,r,re=0;
+    cin>>n;
+    while(n!=0)
+    {
+        r=n%10;
+        re=re*10+r;
+        n=n/10;
+    }
+    cout<<re;
+}
+
+
+Sample Test Case :
+
+Input:
+
+1234
+
+Output:
+
+4321
+
+Explanation :
+
+1234-->revers order-->4321
+
