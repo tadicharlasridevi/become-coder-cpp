@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,r,sum=0;
+    cin>>n;
+    int p=n;
+    while(n>0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n=n/10;
+    }
+    if(p%sum==0)
+    cout<<"True";
+    else
+    cout<<"False";
+}
+
+
+
+
+
+
+Sample Test Case:
+
+Input:
+
+ 18
+
+Output: 
+
+True
+
+Input:
+
+ 15
+
+Output: 
+
+False
+
+Explanation:
+
+ n=18
+
+then we have to find the sum of its digits then we get 9 (1+8), then 18 is divisible by 9 then 18 is Harshad number.
+
