@@ -1,0 +1,73 @@
+#include<iostream>
+using namespace std;
+int check(int a,int b)
+{
+    int s=0;
+    for(int i=1;i<a;i++)
+    {
+        if(a%i==0)
+        {
+            s=s+i;
+        }
+    }
+    if(s==b)
+    {
+        int s=0;
+        for(int i=1;i<b;i++)
+        {
+            if(b%i==0)
+            {
+                s=s+i;
+        }
+    }
+    if(s==a)
+    return 1;
+    else
+    return 0;
+}
+return 0;
+}
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+   if(check(a,b))
+   cout<<"Amicable";
+   else
+   cout<<"Not Amicable";
+}
+
+
+
+
+
+
+
+Sample Test Case 1:
+
+input:
+
+220
+
+284
+
+output:
+
+Amicable 
+
+Example:
+
+220 : 1+2+4+5+10+11+20+22+44+55+110 = 284
+
+284:  1+2+4+72+142 = 220
+
+input:
+
+236 
+
+345
+
+output:
+
+ Not Amicable
+
