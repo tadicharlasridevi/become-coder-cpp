@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,flag=0;
+    cin>>n;
+    int a=n*n;
+    while(n!=0)
+    {
+        if(n%10!=a%10)
+        {
+            flag++;
+        }
+        n=n/10;
+        a=a/10;
+    }
+    if(flag==1)
+    cout<<"Not an Automorphic Number";
+    else
+    cout<<"Automorphic Number";
+}
+output: 5*5=25   -----> 5 appears at last
+
+An Automorphic number is that number whose square ends with the same digits as the original number. Ex -5, 76, etc.
+
+Sample Test Case 1:
+
+input:
+
+5
+
+output:
+
+Automorphic Number
+
+input:
+
+43
+
+output:
+
+Not an Automorphic Number
+
+ 
+
+
+
