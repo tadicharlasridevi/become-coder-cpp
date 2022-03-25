@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+int reve(int n)
+{
+    int re=0,r;
+    while(n>0)
+    {
+        r=n%10;
+        re=re*10+r;
+        n=n/10;
+    }
+    return re;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int re=reve(n);
+    if((n*n)==reve(re*re))
+    cout<<"True";
+    else
+    cout<<"False";
+}
+
+
+
+
+Sample Test Case:
+
+Input:
+
+12
+
+Output:
+
+ True
+
+Explanation:
+
+Square of 12 = 144
+
+Reverse of 12 = 21
+
+Square of 21 = 441
+
+Now Square of 12 and square of the reverse of 12 are the reverse of each other. Therefore 12 is Adam number.
+
+Input: 
+
+14
+
+Output:
+
+ False
+
+Explanation:
+ Square of 14 = 196
+
+Reverse of 14 = 41
+
+Square of 41 = 1681
+
+Now Square of 14 and square of the reverse of 14 are not the reverse of each other. Therefore 14 is Not  Adam number.
+
