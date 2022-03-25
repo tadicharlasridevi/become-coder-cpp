@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+int gcd(int a,int b)
+{
+    if(a==0)
+    return b;
+    if(b==0 || a==b)
+    return a;
+    if(a>b)
+    return gcd(a-b,b);
+    else
+    return gcd(a,b-a);
+    
+}
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<gcd(a,b);
+}
+
+
+
+
+Sample Test Case :
+
+Input :
+
+8 12
+
+Output:
+
+4
+
+input :
+
+12 24
+
+Output :
+
+12
+
+Explanation :
+
+We have two integers 8 and 12. Let's find the HCF.
+
+The divisors of 8 are:
+
+-> 1, 2, 4, 8
+The divisors of 12 are:
+
+-> 1, 2, 3, 4, 6, 12
+HCF /GCD is the greatest common divisor. So HCF of 8 and 12 are 4. 
+
