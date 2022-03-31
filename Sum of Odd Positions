@@ -1,0 +1,19 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+    int a,n,o_sum=0;
+    cin>>n;
+    vector<int>v;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a;
+        v.emplace_back(a);
+    }
+    for(int i=1;i<n;i+=2)
+    {
+        o_sum=o_sum+v[i];
+    }
+    cout<<o_sum;
+}
