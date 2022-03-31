@@ -1,0 +1,25 @@
+#include<iostream>
+#include<vector>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+    int n,a,e_sum=0,o_sum=0;
+    cin>>n;
+    vector<int>v;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a;
+        v.emplace_back(a);
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(v[i]%2==0)
+        {
+            e_sum=e_sum+v[i];
+        }
+        else
+        o_sum=o_sum+v[i];
+    }
+    cout<<abs(o_sum-e_sum);
+}
