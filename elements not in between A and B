@@ -1,0 +1,30 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int n,a,l,r;
+    cin>>n;
+    vector<long long int>v;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a;
+        v.emplace_back(a);
+    }
+    cin>>l>>r;
+    vector<long long int>w;
+    for(int i=0;i<n;i++)
+    {
+        if(v[i]>=l and v[i]<=r)
+        continue;
+        else
+        w.push_back(v[i]);
+    }
+    if(w.size()==0)
+    cout<<-1;
+    else
+    {
+        for(int i=0;i<w.size();i++)
+        cout<<w[i]<<" ";
+    }
+}
