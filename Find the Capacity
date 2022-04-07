@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,t,b;
+    cin>>s>>t>>b;
+    float c=2*s*t*b*512;
+    float kb=c/1024;
+    cout<<kb<<"KB";
+}
